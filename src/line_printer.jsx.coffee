@@ -7,7 +7,6 @@ LinePrinter = React.createClass
     text: null
 
   render: ->
-    line = `<LinePrinter text={this.props.title} />`
     `<div>
       {this.props.text}
     </div>`
