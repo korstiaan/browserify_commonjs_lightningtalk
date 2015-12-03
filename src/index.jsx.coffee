@@ -1,4 +1,6 @@
 React = require 'react'
+LinePrinter = require './line_printer'
+
 Index = React.createClass
   propTypes:
     title: React.PropTypes.string.isRequired
@@ -10,7 +12,7 @@ Index = React.createClass
 
   render: ->
     `<div>
-      {this.props.title}
+      <LinePrinter text={this.props.title} />
     </div>`
 
 module.exports = Index
