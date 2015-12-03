@@ -4,9 +4,7 @@ Index = React.createClass
     title: React.PropTypes.string.isRequired
 
   getDefaultProps: ->
-    field_name: null
     title: null
-    filter_options: {}
 
   render: ->
     `<div>
