@@ -5,9 +5,7 @@ this.Index = React.createClass({displayName: "Index",
   },
   getDefaultProps: function() {
     return {
-      field_name: null,
-      title: null,
-      filter_options: {}
+      title: null
     };
   },
   render: function() {
