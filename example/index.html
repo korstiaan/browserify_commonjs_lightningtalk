@@ -2,15 +2,15 @@
 <html class='no-js' lang='nl' xml:lang='nl'>
 <head>
     <meta charset='utf-8'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
-
     <script src="../dist/index.js"></script>
 </head>
 
 <body>
     <div id="example"></div>
     <script type="text/javascript">
+      Index = require('foo-bar');
+      React = require('react');
+      ReactDOM = require('react-dom');
       ReactDOM.render(
         React.createElement(Index, {
           title: 'Foo Bar'

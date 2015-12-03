@@ -1,4 +1,5 @@
-@Index = React.createClass
+React = require 'react'
+Index = React.createClass
   propTypes:
     title: React.PropTypes.string.isRequired
 
@@ -11,3 +12,5 @@
     `<div>
       {this.props.title}
     </div>`
+
+module.exports = Index

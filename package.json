@@ -7,13 +7,14 @@
   "repository": "https://github.com/korstiaan/browserify_commonjs_lightningtalk",
   "scripts": {
     "build": "npm run build-js",
-    "build-js": "cjsx -cb -p src/index.jsx.coffee > dist/index.js",
+    "build-js": "browserify --debug  -t coffeeify -t [ reactify --extension coffee ] --extension '.jsx.coffee' -r react -r react-dom -r ./src/index.jsx.coffee:foo-bar > dist/index.js",
     "start": "node example/server.js"
   },
   "devDependencies": {
-    "coffee-react": "^4.0.0",
     "coffee-script": "^1.10.0",
+    "coffeeify": "^1.2.0",
     "connect": "^3.4.0",
+    "reactify": "^1.1.1",
     "serve-static": "^1.10.0"
   }
 }
