@@ -1,6 +1,5 @@
 @Index = React.createClass
   propTypes:
-    # Field name to store Video id in
     title: React.PropTypes.string.isRequired
 
   getDefaultProps: ->
